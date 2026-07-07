@@ -1,6 +1,8 @@
 import Sidebar from "@/components/dashboard/Sidebar";
 import Topbar from "@/components/dashboard/Topbar";
 import WelcomeCard from "@/components/dashboard/WelcomeCard";
+import StyleScore from "@/components/dashboard/StyleScore";
+import TodaysOutfit from "@/components/dashboard/TodaysOutfit";
 
 export default function DashboardPage() {
   return (
@@ -15,20 +17,9 @@ export default function DashboardPage() {
             <WelcomeCard />
           </section>
 
-          <section className="mt-6 grid gap-6 xl:grid-cols-[1.5fr_0.9fr]">
-            <div className="rounded-[28px] border border-white/10 bg-white/5 p-6 shadow-[0_25px_70px_rgba(0,0,0,0.24)] backdrop-blur-xl">
-              <h3 className="text-xl font-semibold">Today&apos;s style pulse</h3>
-              <p className="mt-2 text-sm text-zinc-400">
-                Your AI stylist is preparing a polished, weather-aware outfit plan.
-              </p>
-            </div>
-
-            <div className="rounded-[28px] border border-white/10 bg-white/5 p-6 shadow-[0_25px_70px_rgba(0,0,0,0.24)] backdrop-blur-xl">
-              <h3 className="text-xl font-semibold">Wardrobe score</h3>
-              <p className="mt-2 text-sm text-zinc-400">
-                92% aligned with your current aesthetic and calendar.
-              </p>
-            </div>
+          <section className="mt-6 grid gap-6 xl:grid-cols-[1.1fr_0.9fr]">
+            <TodaysOutfit />
+            <StyleScore />
           </section>
         </main>
       </div>
